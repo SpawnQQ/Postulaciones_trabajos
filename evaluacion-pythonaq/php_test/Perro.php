@@ -1,5 +1,5 @@
 <?php
-include "Canino.php";
+
 class Perro extends Canino {
 
 	var $nombre_perro;
@@ -18,7 +18,7 @@ class Perro extends Canino {
 
 	public function toString()
 	{
-		print $this->nombre_perro.", ".$this->nombre_amo.", ".$this->raza;
+		print $this->nombre_perro.", ".$this->nombre_amo.", ".$this->raza."\n";
 	}
 
 	public function comer()

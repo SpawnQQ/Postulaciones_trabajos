@@ -1,5 +1,5 @@
 <?php
-include "Felino.php";
+
 class Tigre extends Felino {
 
 	var $tipo_tigre;
@@ -16,17 +16,17 @@ class Tigre extends Felino {
 
 	public function toString()
 	{
-		print $this->tipo_tigre.", ".$this->num_manada;
+		print $this->tipo_tigre.", ".$this->num_manada."\n";
 	}
 
 	public function comer()
 	{
-		return "La manada de ".$this->numero_manada." leones cazaron una ". $this->$alimento. " y se preparan para devorarla ";
+		return "La manada de ".$this->numero_manada." leones cazaron una ". $this->alimento. " y se preparan para devorarla ";
 	}
 
 	public function dormir()
 	{
-		return $this->nombre_perro."Duerme en ".$this->dormitorio;
+		return "Duerme en ".$this->dormitorio;
 	}
 	
 	public function correr()
